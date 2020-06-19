@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversão de base numérica</title>
+  <script src="script.js"></script>
+  
+</head>
+
+<body>
+  <div id="Form">
+    <form style="border: 1px double blue; background-color: #DDF;
+			padding: 4px;text-align:center; margin-right: 15px;" name="convert">
+      <h1>Conversão de base numérica</h1>
+
+      <form>
+        <label>Binario:</label>
+        <input id="bin" type="text" oninput="bindec()">
+
+
+
+        <label>Decimal:</label>
+        <input id="dec" type="text" oninput="decbin();decoctal();dechex()">
+
+
+
+        <label>Octal:</label>
+        <input id="octal" type="text" oninput="octaldec()">
+
+
+        <label>Hexadecimal:</label>
+        <input id="hex" type="text" oninput="hexdec()">
+
+        <br /><br />
+        <input type="button" value="Limpar" onclick="clearAll();">
+      </form>
+  </div>
+
+</body>
+
+</html>
